@@ -1,0 +1,53 @@
+.menu
+    display: flex
+    justify-content: space-between
+    width: 100%
+    &__burgers
+        position: absolute
+        top: 0
+        right: 0
+        margin: 15px
+        transition: .5s
+        &--activ
+            right: 40%
+            z-index: 1
+    &__btn
+        font-size: 1.9rem
+        border: none
+        background-color: transparent
+        cursor: pointer
+        &--hide
+            display: none
+            z-index: 1
+    &__items-list
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        position: fixed
+        top: 0
+        right: -50%
+        width: 50%
+        height: 500px
+        padding-top: 35px
+        background-color: $color-gray-rgba
+        border-radius: 10px 0 10px 10px
+        transition: .4s
+        &--activ
+            left: 50%
+    &__item 
+        width: 100%
+        text-transform: uppercase
+        list-style: none
+        text-align: center
+        font-size: 0.9rem
+        font-weight: bold
+    &__link
+        display: block
+        width: 100%
+        padding: 20px
+        text-decoration: none
+        color: $color-white
+        transition: .4s
+    &__link:hover
+        background-color: $color-white
+        color: $color-gray
